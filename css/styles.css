@@ -264,7 +264,7 @@ footer button {
 @media screen and (max-width: 30em) {       /*MAKE HAMBUGER MENU FOR MOBILE!!!!!!!!*/
     /*Links are blue?????? change that maybe*/
     :root {
-        --site-padding: 0.5em 1em 0.5em 1em;
+        --site-padding: 0.3em 1em 0.3em 1em;
     }
 
     h1 {
