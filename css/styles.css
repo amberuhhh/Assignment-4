@@ -54,6 +54,13 @@ button:active {
     background-color: var(--dark-colour);
 }
 
+img {
+    max-width: 100%;
+    max-height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
 body {
     padding: 0;
     margin: 0;
@@ -127,10 +134,20 @@ nav ol a {
 
 /*Main*/
 main {
-    display: flex;
+    display: block;
     padding: var(--site-padding)
 }
 
+
+/*Products*/
+#products {
+    display: flex;
+    gap: 2em;
+}
+
+#products img {
+    max-width: 30em;
+}
 
 
 /*Gallery*/
@@ -140,14 +157,6 @@ main {
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     grid-gap: 1em;
 }
-
-#gallery img {
-    max-width: 100%;
-    max-height: auto;
-    object-fit: cover;
-    object-position: center;
-}
-
 
 
 /*Subscribe*/
