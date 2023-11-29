@@ -45,13 +45,8 @@ button {
     border: none;
 }
 
-button:hover, nav ol li a:hover {
-    color: rgb(113, 113, 113);
-    font-size: 13px;
-}
-
-button:active {
-    background-color: var(--dark-colour);
+button:hover {
+    background-color: rgb(192, 192, 192);
 }
 
 img {
@@ -102,17 +97,22 @@ nav {
 
 nav ol {
     display: inline-flex;
+    height: 2em;
     padding: 10px;
     margin: 0;
 }
 
 nav ol a {
     list-style: none;
-    padding: 10px 25px 10px 25px;
+    padding: 6px 25px 6px 25px;
     font-size: 14px;
     font-weight: 700;
     text-decoration: none;
     color: var(--black-color);
+}
+
+nav ol a:hover {
+    font-size: 15px;
 }
 
 
@@ -180,6 +180,10 @@ main {
     background-color: rgb(255, 255, 255, 90%);
 }
 
+#order button {
+    font-size: 20px;
+    padding: 14px;
+}
 
 
 /*Footer*/
@@ -230,6 +234,11 @@ footer button {
         display: block;
     }
 
+    #products {
+        display: flex;
+        gap: 1em;
+    }
+
     #gallery {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -253,6 +262,10 @@ footer button {
 
     main {
         display: block;
+    }
+
+    #products img {
+        max-width: 20em;
     }
 
     #gallery {
@@ -306,6 +319,10 @@ footer button {
     }
   
     main {
+        display: block;
+    }
+
+    #products {
         display: block;
     }
 
