@@ -8,22 +8,19 @@
     <script src="https://kit.fontawesome.com/eda861a150.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav>
-        <header>
-            <div>
-                <img src="images/logo.svg" alt="..." width="80px">
-            </div>
-            <div>
-                <button> <i class="fas fa-shopping-cart fa-2xl"></i> </button> <!-- This would link to another page!!! -->
-                <button> <i class="fas fa-user fa-2xl"></i> </button> <!-- This would link to another page!!! -->
-            </div>
-        </header>
-        <ol>
-            <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="about.html">About Us</a>
-        </ol>
-    </nav>
+    <header>
+        <nav>
+            <img src="images/logo.svg" alt="Kopas Kreations Logo, double Ks">
+            <ol class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="about.html">About Us</a>
+                <button><i class="fas fa-shopping-cart fa-2xl"></i> </button> <!-- This would link to another page!!! -->
+                <button><i class="fas fa-user fa-2xl"></i> </button> <!-- This would link to another page!!! -->
+            </ol>
+            <button class="hamburger"><i class="fa fa-bars fa-2xl"></i></button>
+        </nav>
+    </header>
 
     <div id="hero">
         <h1>Kopas Kreations</h1>
@@ -97,6 +94,25 @@
         <p>Privacy Policy - Terms of use</p>
         <p>Copyright &copy; 2023 - All rights reserved</p>
     </div>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
 
+        hamburger.addEventListener("click", mobileMenu);
+
+        function mobileMenu() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        }
+
+        const navLink = document.querySelectorAll(".nav-link");
+
+        navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+        function closeMenu() {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+        }
+    </script>
 </body>
 </html>

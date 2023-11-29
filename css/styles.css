@@ -69,7 +69,7 @@ body {
 /*Body */
 
 /*Header and Nav*/
-header {
+nav {
     display: flex;
     max-height: 4em;
     border-bottom: solid 1px var(--dark-gray);
@@ -79,7 +79,7 @@ header {
     background-color: var(--light-colour);
 }
 
-header button {
+nav button {
     padding: 10px;
     margin: 0;
     background-color: transparent;
@@ -87,7 +87,12 @@ header button {
     color: var(--black-color);
 }
 
-nav {
+nav img {
+    width: 126px;
+    height: auto;
+}
+
+header {
     top: 0;
     z-index: 999;
     position: sticky;
@@ -95,14 +100,14 @@ nav {
     text-align: center;
 }
 
-nav ol {
+header ol {
     display: inline-flex;
     height: 2em;
     padding: 10px;
     margin: 0;
 }
 
-nav ol a {
+header ol a {
     list-style: none;
     padding: 6px 25px 6px 25px;
     font-size: 14px;
@@ -111,8 +116,18 @@ nav ol a {
     color: var(--black-color);
 }
 
-nav ol a:hover {
+header ol a:hover {
     font-size: 15px;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -254,10 +269,32 @@ footer button {
         --site-padding: 0.5em 4em 0.5em 4em;
     }
 
-    nav ol li a {
+    header ol li a {
         font-size: 13px;
         padding: 10px;
     }
+
+    .nav-menu {
+        position: fixed;
+        left: -120%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        height: auto;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    
 
     main {
         display: block;
@@ -304,11 +341,11 @@ footer button {
         font-size: 15px;
     }
 
-    header {
+    nav {
         padding: 6px;
     }
 
-    nav ol li a {
+    header ol li a {
         font-size: 12px;
         padding: 6px;
     }
