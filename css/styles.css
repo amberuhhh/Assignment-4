@@ -14,25 +14,27 @@
     --header-family: 'Bodoni Moda', serif;
     --body-family: 'Inter', sans-serif;
     --black-color: rgb(67, 63, 60);
+    --text-margin: 8px 0px 12px 0px;
 }
 
 h1 {
     font-size: 42px;
-    margin: 0px;
+    margin: var(--text-margin);
 }
 
 h2 {
     font-size: 36px;
-    margin: 6px;
+    margin: var(--text-margin);
 }
 
 h3 {
     font-size: 24px;
-    margin: 14px;
+    margin: var(--text-margin);
 }
 
 p {
     font-size: 18px;
+    margin: var(--text-margin);
 }
 
 button {
@@ -143,12 +145,35 @@ header ol a:hover {
     padding: var(--site-padding)
 }
 
+#hero p {
+    margin-bottom: 40px;
+}
+
 
 
 /*Main*/
 main {
     display: block;
-    padding: var(--site-padding)
+    text-align: center;
+    padding: var(--site-padding);
+    padding-top: 0px;
+}
+
+main img {
+    height: 26em;
+    width: 100%;
+    
+}
+
+main div {
+    margin: 30px 0px 30px 0px;
+}
+
+
+main .price-size {
+    justify-content: space-evenly;
+    display: flex;
+    margin: 0px;
 }
 
 
@@ -156,12 +181,22 @@ main {
 #products {
     padding: var(--site-padding);
     display: flex;
-    gap: 2em;
+    gap: 0.5em;
+    justify-content: space-evenly;
+    margin: 30px 0px 20px 0px;
+    text-align: center;
+}
+
+#products h3 {
+    font-size: 28px;
 }
 
 #products img {
-    max-width: 30em;
+    width: 24em;
+    min-height: 28em;
 }
+
+
 
 
 /*Gallery*/
@@ -170,11 +205,12 @@ main {
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     grid-gap: 1em;
     padding: var(--site-padding);
+    margin: 20px 0px 20px 0px;
 }
 
 #gallery img {
     width: 20em;
-    height: 20em;
+    height: 24em;
 }
 
 
@@ -252,11 +288,6 @@ footer button {
         display: block;
     }
 
-    #products {
-        display: flex;
-        gap: 1em;
-    }
-
     #gallery {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -309,8 +340,9 @@ footer button {
     }
 
     #products img {
-        max-width: 20em;
-    }
+        max-width: 18em;
+        height: 22em;
+    }    
 
     #gallery {
         grid-template-columns: 1fr 1fr;
@@ -371,9 +403,10 @@ footer button {
         display: block;
     }
 
-    #products {
-        display: block;
-    }
+    #products img {
+        max-width: 14em;
+        height: 18em;
+    }    
 
     #gallery {
         grid-template-columns: 1fr 1fr;
