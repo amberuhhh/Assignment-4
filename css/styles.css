@@ -154,6 +154,7 @@ main {
 
 /*Products*/
 #products {
+    padding: var(--site-padding);
     display: flex;
     gap: 2em;
 }
