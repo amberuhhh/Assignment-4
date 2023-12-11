@@ -50,6 +50,10 @@ button:hover {
     color: black;
 }
 
+button:visited {
+    color: grey;
+}
+
 img {
     max-width: 100%;
     max-height: auto;
@@ -195,10 +199,6 @@ main .price-size {
     width: 24em;
     min-height: 28em;
 }
-
-.product-child {
-    margin-bottom: 2em;
-    }
 
 
 
