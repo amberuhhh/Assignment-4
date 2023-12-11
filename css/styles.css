@@ -46,13 +46,26 @@ button {
     background-color: transparent;
 }
 
-button:hover {
-    color: black;
+/* Link colour when not hovering*/
+button a:link {
+    color: rgb(87, 87, 87);
 }
 
-button:visited {
-    color: grey;
+/* Link colour of a visited link*/
+button a:visited {
+    color: darkgray;
 }
+
+/*Link colour when hovering*/
+button a:hover {
+    color: gray
+}
+
+/*Link colour when clicked*/
+button a:active {
+    color: darkblue;
+}
+
 
 img {
     max-width: 100%;
