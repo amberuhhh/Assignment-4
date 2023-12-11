@@ -359,9 +359,16 @@ footer button {
         max-height: 18em;
     }
 
+    main .price-size {
+        justify-content: space-evenly;
+        display: block;
+        margin: 0px;
+    }
+
     #products {
         display: block;
     }
+    
 
     #products img {
         width: 100%;
@@ -430,7 +437,7 @@ footer button {
     }
 
     main img {
-        max-height: 14em;
+        max-height: 16em;
     }
 
     #products img {
