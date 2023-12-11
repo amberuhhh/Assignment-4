@@ -313,9 +313,9 @@ footer button {
         --site-padding: 0.5em 4em 0.5em 4em;
     }
 
-    header ol li a {
+    header ol a {
         font-size: 13px;
-        padding: 10px;
+        padding: 12px;
     }
 
     .nav-menu {
