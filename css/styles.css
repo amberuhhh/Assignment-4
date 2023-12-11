@@ -321,7 +321,7 @@ footer button {
     .nav-menu {
         position: fixed;
         left: -120%;
-        top: 5rem;
+        top: 0rem;
         flex-direction: column;
         background-color: #fff;
         height: auto;
