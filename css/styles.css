@@ -356,7 +356,7 @@ footer button {
     }
 
     main img {
-        height: 18em;
+        max-height: 18em;
     }
 
     #products {
@@ -427,6 +427,10 @@ footer button {
   
     main {
         display: block;
+    }
+
+    main img {
+        max-height: 14em;
     }
 
     #products img {
