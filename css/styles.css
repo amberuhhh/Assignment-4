@@ -179,7 +179,6 @@ main {
 main img {
     height: 26em;
     width: 100%;
-    
 }
 
 main div {
@@ -327,7 +326,7 @@ footer button {
     }
 
     header ol a {
-        font-size: 13px;
+        font-size: 20px;
         padding: 12px;
     }
 
@@ -354,6 +353,10 @@ footer button {
     
     main {
         display: block;
+    }
+
+    main img {
+        height: 18em;
     }
 
     #products {
