@@ -211,10 +211,6 @@ main div {
     min-height: 28em;
 }
 
-.product-child {
-    margin: 2em 0em 2em 0em;
-}
-
 
 
 /*Gallery*/
@@ -444,7 +440,11 @@ footer button {
     #products img {
         max-width: 16em;
         height: 18em;
-    }    
+    }  
+    
+    .product-child {
+        margin: 2em 0em 2em 0em;
+    }
 
     #gallery {
         grid-template-columns: 1fr 1fr;
