@@ -44,25 +44,26 @@ button {
     border-radius: 4px;
     border: none;
     background-color: transparent;
+    text-decoration: none;
 }
 
 /* Link colour when not hovering*/
-button a:link {
+button i:link {
     color: rgb(87, 87, 87);
 }
 
 /* Link colour of a visited link*/
-button a:visited {
+button i:visited {
     color: darkgray;
 }
 
 /*Link colour when hovering*/
-button a:hover {
+button i:hover {
     color: gray
 }
 
 /*Link colour when clicked*/
-button a:active {
+button i:active {
     color: darkblue;
 }
 
