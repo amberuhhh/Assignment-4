@@ -128,14 +128,14 @@ header ol {
 header ol a {
     list-style: none;
     padding: 6px 25px 6px 25px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     text-decoration: none;
     color: var(--black-color);
 }
 
 header ol a:hover {
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .hamburger {
@@ -335,7 +335,6 @@ footer button {
     }
 
     header ol a {
-        font-size: 20px;
         padding: 12px;
     }
 
@@ -432,7 +431,6 @@ footer button {
     }
 
     header ol a {
-        font-size: 18px;
         padding: 6px;
     }
 
