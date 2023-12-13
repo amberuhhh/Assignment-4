@@ -38,12 +38,12 @@ p {
 }
 
 button {
-    min-height: 1.625;
-    margin: 0;
-    padding: 0.5em;
-    border-radius: 0.25em;
+    min-height: 1.625em;
     border: none;
     background-color: transparent;
+}
+
+button a {
     text-decoration: none;
 }
 
