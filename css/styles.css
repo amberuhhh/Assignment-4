@@ -14,7 +14,7 @@
     --header-family: 'Bodoni Moda', serif;
     --body-family: 'Inter', sans-serif;
     --black-color: rgb(67, 63, 60);
-    --text-margin: 0.5 0em 0.75em 0em;
+    --text-margin: 0.25em 0em 0.5em 0em;
 }
 
 h1 {
@@ -35,6 +35,7 @@ h3 {
 p {
     font-size: 1.125em;
     margin: var(--text-margin);
+    line-height: 1.3em;
 }
 
 button {
@@ -48,22 +49,22 @@ button a {
 }
 
 /* Link colour when not hovering*/
-button i:link {
-    color: rgb(87, 87, 87);
+button a:link {
+    color: var(--black-color);
 }
 
 /* Link colour of a visited link*/
-button i:visited {
-    color: darkgray;
+button a:visited {
+    color: var(--dark-colour);
 }
 
 /*Link colour when hovering*/
-button i:hover {
-    color: gray
+button a:hover {
+    color: rgb(104, 104, 104)
 }
 
 /*Link colour when clicked*/
-button i:active {
+button a:active {
     color: darkblue;
 }
 
@@ -192,15 +193,27 @@ main div {
     margin: 0;
 }
 
+/*About us main*/
 #about-us {
     display: flex;
     text-align: left;
-    gap: 1em;
+    gap: 2em;
 }
 
 #about-us img {
     width: 60em;
     height: auto;
+}
+
+#about-us p {
+    padding: 1em 2em 1em 4em;
+}
+
+#about-us h4 {
+    background-color: var(--light-gray);
+    padding: 1em;
+    text-align: center;
+    line-height: 1.75em;
 }
 
 
