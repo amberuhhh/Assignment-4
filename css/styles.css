@@ -228,6 +228,10 @@ main div {
     height: 24em;
 }
 
+.gallery-items {
+    text-align: center;
+}
+
 
 /*Subscribe*/
 #order {
@@ -304,12 +308,18 @@ footer button {
     }
 
     #gallery {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     #gallery img {
         width: 18em;
         height: 18em;
+    }
+
+    .price-size {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0px;
     }
 
     .order-wrapper {
@@ -358,11 +368,6 @@ footer button {
         max-height: 18em;
     }
 
-    main .price-size {
-        display: block;
-        margin: 0px;
-    }
-
     #products {
         display: block;
     }
@@ -383,6 +388,11 @@ footer button {
     #gallery img {
         width: 20em;
         height: 20em;
+    }
+
+    .price-size {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .order-wrapper {
