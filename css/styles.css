@@ -14,34 +14,34 @@
     --header-family: 'Bodoni Moda', serif;
     --body-family: 'Inter', sans-serif;
     --black-color: rgb(67, 63, 60);
-    --text-margin: 8px 0px 12px 0px;
+    --text-margin: 0.5 0em 0.75em 0em;
 }
 
 h1 {
-    font-size: 42px;
+    font-size: 2.5em;
     margin: var(--text-margin);
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 2.25em;
     margin: var(--text-margin);
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 1.5em;
     margin: var(--text-margin);
 }
 
 p {
-    font-size: 18px;
+    font-size: 1.125em;
     margin: var(--text-margin);
 }
 
 button {
-    min-height: 26px;
+    min-height: 1.625;
     margin: 0;
-    padding: 8px;
-    border-radius: 4px;
+    padding: 0.5em;
+    border-radius: 0.25em;
     border: none;
     background-color: transparent;
     text-decoration: none;
@@ -106,7 +106,7 @@ nav button {
 }
 
 nav img {
-    width: 126px;
+    width: 8em;
     height: auto;
 }
 
@@ -121,21 +121,21 @@ header {
 header ol {
     display: inline-flex;
     height: 2em;
-    padding: 10px;
+    padding: 0.85em;
     margin: 0;
 }
 
 header ol a {
     list-style: none;
-    padding: 6px 25px 6px 25px;
-    font-size: 16px;
+    padding: 0.375em 1.625em 0.375em 1.625em;
+    font-size: 1em;
     font-weight: 700;
     text-decoration: none;
     color: var(--black-color);
 }
 
 header ol a:hover {
-    font-size: 17px;
+    font-size: 1.063em;
 }
 
 .hamburger {
@@ -164,7 +164,7 @@ header ol a:hover {
 }
 
 #hero p {
-    margin-bottom: 40px;
+    margin-bottom: 2.5em;
 }
 
 
@@ -174,7 +174,7 @@ main {
     display: block;
     text-align: center;
     padding: var(--site-padding);
-    padding-top: 0px;
+    padding-top: 0;
 }
 
 main img {
@@ -183,13 +183,13 @@ main img {
 }
 
 main div {
-    margin: 30px 0px 30px 0px;
+    margin: 2em 0 2em 0;
 }
 
 .price-size {
     justify-content: space-evenly;
     display: flex;
-    margin: 0px;
+    margin: 0;
 }
 
 #about-us {
@@ -211,12 +211,12 @@ main div {
     display: flex;
     gap: 0.5em;
     justify-content: space-evenly;
-    margin: 30px 0px 20px 0px;
+    margin: 2em 0 1.25em 0;
     text-align: center;
 }
 
 #products h3 {
-    font-size: 28px;
+    font-size: 1.75em;
 }
 
 #products img {
@@ -232,7 +232,7 @@ main div {
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     grid-gap: 1em;
     padding: var(--site-padding);
-    margin: 20px 0px 20px 0px;
+    margin: 1.25em 0 1.25em 0;
 }
 
 #gallery img {
@@ -261,14 +261,15 @@ main div {
     flex-direction: column;
     max-width: 40%;
     text-align: center;
-    margin: 1em;
-    padding: 1.5em;
+    margin: 1.5em;
+    padding: 2.75em;
     background-color: rgb(255, 255, 255, 90%);
 }
 
 #order button {
-    font-size: 20px;
-    padding: 14px;
+    font-size: 1.25em;
+    margin-top: 0.5em;
+    padding: 0.875em;
 }
 
 
@@ -285,7 +286,7 @@ footer {
 footer * {
     text-decoration: none;
     list-style: none;
-    padding: 8px 6px 8px 0px;
+    padding: 0.5em 0.375em 0.5em 0.375em;
     margin:0;
     background-color: none;
 }
@@ -295,7 +296,7 @@ footer * {
 }
 
 footer button {
-    padding: 8px 8px 0px 0px;
+    padding: 0.5em 0.5em 0 0;
 }
 
 .copyright {
@@ -303,11 +304,11 @@ footer button {
     justify-content: space-between;
     background-color: var(--dark-colour);
     min-height: 2em;
-    padding: 3px;
+    padding: 0.188em;
 }
 
 .copyright p {
-    font-size: 12px;
+    font-size: 0.75em;
     padding: var(--site-padding)
 }
 
@@ -335,7 +336,7 @@ footer button {
     .price-size {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        margin: 0px;
+        margin: 0;
     }
 
     .order-wrapper {
@@ -351,7 +352,7 @@ footer button {
     }
 
     header ol a {
-        padding: 12px;
+        padding: 0.75em;
     }
 
     .nav-menu {
@@ -427,27 +428,27 @@ footer button {
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 1.875em;
     }
     
     h2 {
-        font-size: 26px;
+        font-size: 1.625em;
     }
     
     h3 {
-        font-size: 20px;
+        font-size: 1.25em;
     }
     
     p {
-        font-size: 16px;
+        font-size: 1em;
     }
 
     nav {
-        padding: 6px;
+        padding: 0.375em;
     }
 
     header ol a {
-        padding: 6px;
+        padding: 0.375em;
     }
 
     #hero {
@@ -493,7 +494,7 @@ footer button {
     }
 
     .copyright p {
-        font-size: 10px;
+        font-size: 0.625em;
     }
 
 }
